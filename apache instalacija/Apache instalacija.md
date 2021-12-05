@@ -1,6 +1,15 @@
-
 Instalacija Apache2 na Ubuntu 20
 ====
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+
+
+
+
+Konfiguracija Apache2 na Ubuntu 20
+====
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-18-04-quickstart
+
 ## 1. Dodajemo virtual host 
 konfiguracijska datoteku ***ubuntu.app.conf***
 
