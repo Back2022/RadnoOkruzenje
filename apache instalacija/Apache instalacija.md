@@ -59,7 +59,7 @@ sudo a2ensite ubuntu.app.conf
 ```
 
 Nakon virtualhost i ports postavki potrebno je ***restartirati apache servis***
-```bash
+```console
 #reload konfiguracije bez restarta servisa
 sudo systemctl reload apache2
 
@@ -71,7 +71,7 @@ systemctl status apache2
 
 
 > Ovo je konfiguracijski file za virtual host
-```bash
+```sh
 sudo nano /etc/hosts
 
 cat /etc/hosts
@@ -83,7 +83,7 @@ cat /etc/hosts
 Isprobamo:
 
 
-```bash
+```Shell
 ping ubuntu.app
 PING ubuntu.app (34.102.136.180) 56(84) bytes of data.
 64 bytes from 180.136.102.34.bc.googleusercontent.com (34.102.136.180): icmp_seq=1 ttl=56 time=24.7 ms
