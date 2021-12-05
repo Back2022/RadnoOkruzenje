@@ -1,4 +1,4 @@
-Radno kruzenje
+Radno okruzenje
 ====
 ## Radno okruženje - 1. seminar backend
 
