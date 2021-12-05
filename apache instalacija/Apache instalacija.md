@@ -1,7 +1,7 @@
 # RadnoOkruzenje
 ====
 Radno okruženje - 1. seminar backend
-
+<pre><font color="#4E9A06"><b>php@php-VirtualBox</b></font>:<font color="#3465A4"><b>~</b></font>$ nano /etc/apache2/sites-available/ubuntu.app.conf </pre>
 
 Zahtjevi
 ====
