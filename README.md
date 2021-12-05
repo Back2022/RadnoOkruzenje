@@ -3,7 +3,7 @@ Radno okruzenje
 ## Radno okruženje - 1. seminar backend
 
 
-1. Zahtjevi
+1.Zahtjevi
 ====
 
 -XAMPP (https://www.apachefriends.org/index.html)
@@ -19,17 +19,17 @@ Radno okruzenje
 -VS Code (https://code.visualstudio.com/download)
 
 
-2. Instalacija Sambe:
+2.Instalacija Sambe:
 ====
 https://kifarunix.com/install-and-configure-samba-file-server-on-ubuntu-20-04/
 
 
-3. Instalacija Apache:
+3.Instalacija Apache:
 ====
 
 ![Apache instalacija](apache%20instalacija/Apache%20instalacija.md)
 
-4. Instalacija VirtualBox Ubuntu:
+4.Instalacija VirtualBox Ubuntu:
 ====
 
 ![instalacija](screenshoti/1.PNG)
