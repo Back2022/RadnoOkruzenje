@@ -91,9 +91,16 @@ PING ubuntu.app (34.102.136.180) 56(84) bytes of data.
 64 bytes from 180.136.102.34.bc.googleusercontent.com (34.102.136.180): icmp_seq=3 ttl=56 time=36.1 ms
 
 ```
-## 4. dodajemo virtualbox u apache2 grupu
+## 4. dodajemo virtualbox usera u apache2 grupu
 
-VIrtualBox user je  ***vboxsf***, Apache2 grupa je ***www-data***
+VirtualBox user je  ***vboxsf***, Apache2 grupa je ***www-data***
+
+```bash
 sudo adduser www-data vboxsf
+```
 
-cd /var/www/
+## 5. Provjerimo je li sherani file mapiran i s kojim pravima
+
+```bash
+cd /var/www/ParcijalniIspit
+```
