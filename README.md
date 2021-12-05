@@ -34,14 +34,14 @@ https://kifarunix.com/install-and-configure-samba-file-server-on-ubuntu-20-04/
 
 ![instalacija](screenshoti/1.PNG)
 ![instalacija](screenshoti/2.PNG)
+
 ![instalacija](screenshoti/3.PNG)
 ![instalacija](screenshoti/4.PNG)
 ![instalacija](screenshoti/5.PNG)
 ![instalacija](screenshoti/6.PNG)
-
 ![instalacija](screenshoti/8.PNG)
 
-DOdajemo share folder ***/var/www/ParcijalniIspit ***
+### DOdajemo share folder ***/var/www/ParcijalniIspit ***
 ![instalacija](screenshoti/9.PNG)
 
 ![instalacija](screenshoti/10.PNG)
