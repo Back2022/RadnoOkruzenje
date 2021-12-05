@@ -20,4 +20,4 @@ Zahtjevi
 
 
 Instalacija VirtualBox Ubuntu:
-![netbeans-open](https://cloud.githubusercontent.com/assets/6241361/21264369/379e26e8-c39c-11e6-82bc-2c924a7c01a8.png)
+![instalacija](screenshoti/1.PNG)
