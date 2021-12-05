@@ -1,4 +1,4 @@
-# RadnoOkruzenje
+RadnoOkruzenje
 ====
 Radno okruženje - 1. seminar backend
 
@@ -26,8 +26,8 @@ https://kifarunix.com/install-and-configure-samba-file-server-on-ubuntu-20-04/
 
 Instalacija Apache:
 ====
-https://github.com/Back2022/RadnoOkruzenje/blob/292999301de1c3c3f9d765f0416bf340e8695c6c/apache%20instalacija/Apache%20instalacija.md
-![instalacija](apache%20instalacija/Apache%20instalacija.md)
+
+![Apache instalacija](apache%20instalacija/Apache%20instalacija.md)
 
 Instalacija VirtualBox Ubuntu:
 ====
