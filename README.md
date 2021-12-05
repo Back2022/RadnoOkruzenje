@@ -35,3 +35,13 @@ Instalacija VirtualBox Ubuntu:
 ![instalacija](screenshoti/11.PNG)
 ![instalacija](screenshoti/12.PNG)
 ![instalacija](screenshoti/13.PNG)
+
+
+Instalacija Sambe:
+====
+https://kifarunix.com/install-and-configure-samba-file-server-on-ubuntu-20-04/
+
+
+Instalacija Apache:
+====
+link?
