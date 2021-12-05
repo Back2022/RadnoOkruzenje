@@ -59,7 +59,7 @@ sudo a2ensite ubuntu.app.conf
 ```
 
 Nakon virtualhost i ports postavki potrebno je ***restartirati apache servis***
-```console
+```bash
 #reload konfiguracije bez restarta servisa
 sudo systemctl reload apache2
 
