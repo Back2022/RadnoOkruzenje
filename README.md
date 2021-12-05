@@ -44,4 +44,4 @@ https://kifarunix.com/install-and-configure-samba-file-server-on-ubuntu-20-04/
 
 Instalacija Apache:
 ====
-link?
+![ apache instalacija](apache instalacija/Apache instalacija.md)
