@@ -103,4 +103,15 @@ sudo adduser www-data vboxsf
 
 ```bash
 cd /var/www/ParcijalniIspit
+
+ls -la
+total 10
+drwxrwx--- 1 root vboxsf 4096 pro   2 20:47 .
+drwxr-xr-x 5 root root   4096 pro   2 21:05 ..
+-rwxrwx--- 1 root vboxsf  150 pro   2 19:16 .htaccess
+-rwxrwx--- 1 root vboxsf   17 stu  30 08:19 index.php
+-rwxrwx--- 1 root vboxsf   17 stu  30 08:19 phpinfo.php
+drwxrwx--- 1 root vboxsf    0 pro   2 08:26 test
+
+
 ```
