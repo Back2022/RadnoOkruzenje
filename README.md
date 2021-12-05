@@ -1,6 +1,6 @@
-RadnoOkruzenje
+Radno kruzenje
 ====
-Radno okruženje - 1. seminar backend
+## Radno okruženje - 1. seminar backend
 
 
 Zahtjevi
