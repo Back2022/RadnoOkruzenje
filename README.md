@@ -65,8 +65,10 @@ Query OK, 0 rows affected (0,02 sec)
 
 mysql> FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0,01 sec)
+```
 
-EDITIRAJ:
+***EDITIRAJ:***
+```bash
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 #za omogućavanje remote connection
 bind-address            =0.0.0.0
