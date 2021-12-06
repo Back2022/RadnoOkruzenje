@@ -68,7 +68,8 @@ Query OK, 0 rows affected (0,01 sec)
 
 EDITIRAJ:
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
-dodaj bind 0.0.0.0
+#za omogućavanje remote connection
+bind-address            =0.0.0.0
 ```
 
 
