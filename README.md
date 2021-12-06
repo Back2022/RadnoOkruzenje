@@ -26,8 +26,49 @@ https://kifarunix.com/install-and-configure-samba-file-server-on-ubuntu-20-04/
 
 3.Instalacija Apache:
 ====
+ 
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
 
 ![Apache instalacija](apache%20instalacija/Apache%20instalacija.md)
+
+4. Instalacija PHP
+====
+```bash
+sudo apt install php libapache2-mod-php php-mysql
+```
+
+restart apachea
+```bash
+sudo service apache2 restart
+```
+
+5. Instalacija Mysql
+
+```bash
+sudo apt install mysql-server
+```
+
+dodati bind 0.0.0.0
+```bash
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+Spojiti se i dodati
+```mysql
+mysql> CREATE USER 'admin'@'%' IDENTIFIED BY '123';
+Query OK, 0 rows affected (0,04 sec)
+
+mysql> GRANT ALL PRIVILEGES ON * . * TO 'admin'@'%';
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0,01 sec)
+
+EDITIRAJ:
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+dodaj bind 0.0.0.0
+```
+
 
 4.Instalacija VirtualBox Ubuntu:
 ====
