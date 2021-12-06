@@ -31,7 +31,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 
 ![Apache instalacija](apache%20instalacija/Apache%20instalacija.md)
 
-4. Instalacija PHP
+
+4.Instalacija PHP
 ====
 ```bash
 sudo apt install php libapache2-mod-php php-mysql
@@ -42,7 +43,8 @@ restart apachea
 sudo service apache2 restart
 ```
 
-5. Instalacija Mysql
+5.Instalacija Mysql
+====
 
 ```bash
 sudo apt install mysql-server
