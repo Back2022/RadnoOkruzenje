@@ -12,5 +12,7 @@
             "email": "mrvic.predrag@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "nesbot/carbon": "^2.55"
+    }
 }
