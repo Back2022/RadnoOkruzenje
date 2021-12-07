@@ -6,6 +6,9 @@ use Carbon\Carbon;
 use Faker\Factory;
 
 printf("Now: %s", Carbon::now());
+//printf("Now: %s", );
+
+
 
 echo "<br>";
 
@@ -25,3 +28,4 @@ echo "<br>";
 echo $x->creditCardNumber;
 echo "<br>";
 echo $x->email;
+
