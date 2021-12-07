@@ -1,0 +1,16 @@
+{
+    "name": "korisnik/code",
+    "description": "moj prvi php composer projekt",
+    "autoload": {
+        "psr-4": {
+            "Korisnik\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mrvic",
+            "email": "mrvic.predrag@gmail.com"
+        }
+    ],
+    "require": {}
+}

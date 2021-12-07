@@ -67,6 +67,23 @@ mysql> FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0,01 sec)
 ```
 
+DODAJEMO ***root*** administratora koji se moze spojit odsusda i ima ***GRANT*** opciju dodavanja usera
+```mysql
+mysql> CREATE USER IF NOT EXISTS 'root'@'%' IDENTIFIED BY '123';
+Query OK, 0 rows affected (0,04 sec)
+
+mysql> GRANT ALL PRIVILEGES  ON *.* TO  'root'@'%';
+Query OK, 0 rows affected (0,02 sec)
+
+mysql> GRANT USAGE ON *.* TO 'root'@'%' WITH GRANT OPTION;
+
+mysql> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0,02 sec)
+
+```
+
+
+
 ***EDITIRAJ:***
 ```bash
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
