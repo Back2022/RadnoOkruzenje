@@ -13,6 +13,7 @@
         }
     ],
     "require": {
-        "nesbot/carbon": "^2.55"
+        "nesbot/carbon": "^2.55",
+        "fakerphp/faker": "^1.17"
     }
 }
