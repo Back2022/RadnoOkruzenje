@@ -9,6 +9,8 @@ sudo nano /etc/samba/smb.conf
 sudo testparm
 ```
 
+***/etc/samba/smb.conf***
+
 ```apacheconf
 [global]
 	log file = /var/log/samba/log.%m
