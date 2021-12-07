@@ -17,10 +17,10 @@ echo $faker->creditCardNumber;
 echo "<br>";
 echo $faker->email;
 //phpinfo();
-
-$x = new Faker();
+echo "<br>";
+$x = Faker\Factory::create();  //create();
 // generate data by calling methods
-echo $x->name();
+echo $x->name($gender='female');
 echo "<br>";
 echo $x->creditCardNumber;
 echo "<br>";
