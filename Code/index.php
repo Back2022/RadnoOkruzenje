@@ -21,6 +21,11 @@ echo "<br>";
 echo $faker->email;
 //phpinfo();
 echo "<br>";
+echo "<hr> Test za Carbon now():";
+$x= new \Carbon\Carbon();
+echo $x->englishDayOfWeek;
+echo "<br>";
+
 $x = Faker\Factory::create();  //create();
 // generate data by calling methods
 echo $x->name($gender='female');
