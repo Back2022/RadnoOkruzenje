@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta id="ime1"   name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            input {display:block};
+            
+        </style>
+        <script>
+        function postavi(){
+        document.getElementById("range-value").value=document.getElementById("range1").value;
+        }
+            
+        </script>
+    </head>
+    <body>
+        <div>
+            <form action="action.php">
+            
+<label for="ime1">button</label>  <input id="ime1"   name="ime1" type="button">
+<label for="ime2">checkbox</label>  <input id="ime2"   name="ime2" type="checkbox">
+<label for="ime3">color</label>  <input id="ime3"   name="ime3" type="color">
+<label for="ime4">date</label>  <input id="ime4"   name="ime4" type="date">
+<label for="ime5">datetime local</label>  <input id="ime5"   name="ime5" type="datetime-local">
+<label for="id">email</label>  <input id="ime1"   name="ime6" type="email">
+<label for="id">file</label>  <input id="ime1"   name="ime7" type="file">
+<label for="id">hidden</label>  <input id="ime1"   name="ime8" type="hidden">
+<label for="id">image</label>  <input id="ime1"   name="ime9" type="image">
+<label for="id">month</label>  <input id="ime1"   name="ime10" type="month">
+<label for="id">number</label>  <input id="ime1"   name="ime11" type="number">
+<label for="id">pass</label>  <input id="ime1"   name="ime12" type="password">
+<label for="id">radio</label>  <input id="ime1"   name="ime13" type="radio">
+<hr>
+<label for="range1">range</label> 
+<input id="range1"   name="range1" type="range" min="5" max="55" step="5" onchange="postavi()">
+ <input id="range-value" name="range-value" type="text">
+<hr>
+<label for="id">reset</label>  <input id="ime1"   name="ime15" type="reset">
+<label for="id">search</label>  <input id="ime1"   name="ime16" type="search">
+<label for="id">submit</label>  <input id="ime1"   name="ime17" type="submit">
+<label for="id">tel</label>  <input id="ime1"  pattern="091-[0-9]{3}-[0-9]{4}" name="ime18" type="tel" >
+<label for="id">text</label>  <input id="ime1"   name="ime19" type="text">
+<label for="id">time</label>  <input id="ime1"   name="ime20" type="time">
+<label for="id">url</label>  <input id="ime1"  placeholder="https://example.com"    pattern="https://.*"  name="ime21" type="url">
+<label for="id">week</label>  <input id="ime1"   name="ime22" type="week">
+                
+            </form>
+            
+            
+        </div>
+    </body>
+</html>
