@@ -14,7 +14,7 @@
         </tr>
         <tr>
             <td>Lozinka:</td>
-            <td><input type="text" name="email"></td>
+            <td><input type="password" name="Locinka"></td>
         </tr>
         <tr>
             <td colspan="2">

@@ -12,8 +12,12 @@ $status = [
     'status' => 'dead',
     'age' => 24 
 ];
+//ispisemo kompletan
+print_r($status);
+
 // Pristup elementu
 print_r($status['name']);
+echo $status['name'];
 // Pristup elementu koji ne postoji
 print_r($status['birthday']);
 ?>

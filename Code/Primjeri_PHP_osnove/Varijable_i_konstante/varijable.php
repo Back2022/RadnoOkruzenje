@@ -15,4 +15,12 @@
 
     // dodjeljivanje vrijednosti varijabli 
     $ime = 'Marko';
+    
+    echo $ime;
+    echo "  " .$Ime;
+    $Ime= "jhfkjhd 12123";
+    echo "  " .$Ime;
+     $Ime=$ime;
+     echo "  " .$Ime; 
+     
 ?>
