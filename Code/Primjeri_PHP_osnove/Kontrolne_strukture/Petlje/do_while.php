@@ -12,4 +12,11 @@ do {
     echo $i . " ";    
     $i++; 
 } while ($i < 0);
+
+echo "with do-while: "; 
+$i = 1; 
+do {    
+    echo $i . " ";    
+    $i+=2; 
+} while ($i < 34);
 ?>

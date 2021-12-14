@@ -1,7 +1,8 @@
 <?php
-
+setlocale(LC_ALL, 'croatian');
+echo date('l');
 // Provjera i ispis rezultata
-switch(date('N')){
+switch(date('N')){ // 1=monday, 2= tue.....
     case 1:
         echo 'Danas je ponedjeljak.';
         break;

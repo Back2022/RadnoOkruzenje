@@ -1,8 +1,8 @@
 <?php
 // Definiranje varijabli
-$a = 5;
+$a = -12;
 $b = 10;
-$c = 15;
+$c = -5;
 
 // Provjera da li je vrijednost varijable b između a i c
 if(($b > $a && $b < $c) || ($b < $a && $b > $c)){
