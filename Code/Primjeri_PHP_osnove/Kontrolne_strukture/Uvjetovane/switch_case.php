@@ -1,5 +1,6 @@
 <?php 
-$title = 'Twilight'; 
+//$title = 'Twilight'; 
+$title="Lord of the Rings";
 switch ($title) {    
     case 'Harry Potter':        
         echo "Nice story, a bit too long.";        

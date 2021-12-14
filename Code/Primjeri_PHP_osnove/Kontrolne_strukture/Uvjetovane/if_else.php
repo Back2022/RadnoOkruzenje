@@ -1,5 +1,5 @@
 <?php 
-if (2 > 3) 
+if (2 > 3) // false
 {    
     echo "Inside the conditional."; 
 } 
