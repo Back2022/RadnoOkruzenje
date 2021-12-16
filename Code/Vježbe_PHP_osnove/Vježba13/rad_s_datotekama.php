@@ -1,8 +1,13 @@
 <?php
+require '../../src/ArrayUnique.php';
+//use ArrayUnique;
 // Čitanje sadržaja datoteke
 $studentsJson = file_get_contents(__DIR__ . '/polaznici.json');
 // Prebacivanje u niz
-$students = json_decode($studentsJson, true);
+$students = json_decode($studentsJson, true);  // ako false, onda pretvara u Objekte
+ArrayUnique::ukloniDuplikate($students);
+//Ukoliko ne zelimo static objekt...
+//print_r((new ArrayUnique())->ukloniDuplikate($students));
 ?>
 
 <!-- Ispis podataka u tablicu -->
@@ -37,7 +42,7 @@ $students[] = [
     "phone" => 38597666777
 ];
 // Transformiranje u JSON
-$studentsJson = json_encode($students);
+$studentsJson = json_encode($students,JSON_PRETTY_PRINT);
 // Zapisivanje novih podataka u datoteku
 file_put_contents(__DIR__ . '/polaznici.json', $studentsJson); 
 
