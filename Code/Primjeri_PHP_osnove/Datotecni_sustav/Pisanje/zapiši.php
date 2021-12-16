@@ -12,7 +12,7 @@ $books[] = [
     "isbn" => 9785267006323
 ];
 // Transformiranje u JSON
-$booksJson = json_encode($books);
+$booksJson = json_encode($books, JSON_PRETTY_PRINT);
 // Zapisivanje novih podataka u datoteku
 file_put_contents(__DIR__ . '/knjige.json', $booksJson); 
 ?>
