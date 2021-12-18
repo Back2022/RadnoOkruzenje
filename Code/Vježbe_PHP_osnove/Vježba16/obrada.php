@@ -2,11 +2,11 @@
 // provjera varijable FILES
 if(!empty($_FILES)){
     // Definiramo upload direktorij
-    $uploadDir = __DIR__ . '/uploads/images/';
+    $uploadDir = __DIR__ . '/uploads/images/'; // niz direktorija
     // Provjerimo da li direktorij postoji
     if(!file_exists($uploadDir)){
         // Ako ne postoji, kreiramo ga
-        mkdir($uploadDir, 0775, true);
+        mkdir($uploadDir, 0775, true); // true rekurzivno kreira niz direktorija
     }
     // Definiramo niz s podacima i dozvoljnim tipovima datoteka
     $mimeTypes = [
