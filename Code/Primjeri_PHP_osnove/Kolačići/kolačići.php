@@ -11,6 +11,6 @@ if(!isset($_COOKIE[$cookie_name])) {
     echo "Value is: " . $_COOKIE[$cookie_name];
 }
 // Za brisanje kolačića vrijeme postavite u prošlost
-setcookie("user", "", time() - 3600);
+//setcookie("user", "", time() - 3600);
 echo "Cookie 'user' is deleted.";
 ?>
