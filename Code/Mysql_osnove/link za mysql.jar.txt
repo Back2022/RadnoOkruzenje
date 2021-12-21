@@ -1,0 +1,5 @@
+http://www.java2s.com/Code/Jar/m/Downloadmysqlconnectorjar.htm
+
+new connection:
+jdbc:mysql://localhost:3306/classicmodels
+
