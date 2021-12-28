@@ -13,7 +13,7 @@ MODIFY year SMALLINT NOT NULL,
 MODIFY color VARCHAR(20) NULL AFTER make;
 
 ALTER TABLE vehicles 
-CHANGE COLUMN note vehicleCondition VARCHAR(100) NOT NULL;
+CHANGE COLUMN note vehicleCondition VARCHAR(70) NOT NULL;
 
 ALTER TABLE vehicles
 DROP COLUMN vehicleCondition;
