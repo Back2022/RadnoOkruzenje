@@ -89,6 +89,9 @@ Query OK, 0 rows affected (0,02 sec)
 sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
 
 ```
+Nakon instalacije, pokreće se setup od phpmyadmin, pratiti korake....
+
+
 Ubacimo u /etc/apache2/apache2.conf
 ```code
 sudo nano /etc/apache2/apache2.conf
