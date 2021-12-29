@@ -82,6 +82,28 @@ Query OK, 0 rows affected (0,02 sec)
 
 ```
 
+5.Instalacija PhpMyAdmin
+====
+
+```bash
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+
+```
+Ubacimo u /etc/apache2/apache2.conf
+```code
+sudo nano /etc/apache2/apache2.conf
+
+# include PHPMYADMIN:
+Include /etc/phpmyadmin/apache.conf
+```
+
+
+```bash
+
+sudo nano /etc/apache2/apache2.conf
+sudo systemctl restart apache2
+
+```
 
 
 ***EDITIRAJ:***

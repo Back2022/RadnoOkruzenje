@@ -1,7 +1,20 @@
-INSERT INTO `clanovi` (`clanskiBroj`, `ime`, `prezime`, `datumUclanjenja`) VALUES
+INSERT INTO `clanovi` (`clanskiBroj`, `ime`, `prezime`, `datumUclanjenja`) 
+VALUES
 (1, 'Pero', 'Peric', '2019-10-13'),
 (2, 'Ana', 'Anic', '2019-10-11'),
 (3, 'Marko', 'Markić', '2019-10-12');
+
+INSERT INTO `videoteka`.`clanovi` (`clanskiBroj`, `ime`, `prezime`, `datumUclanjenja`) 
+VALUES ('7', 'Tamara', 'Vilolin', DATE(NOW()));
+
+-- moze i ovako
+-- INSERT INTO `videoteka`.`clanovi` (`clanskiBroj`, `ime`, `prezime`, `datumUclanjenja`) 
+-- VALUES ('7', 'Tamara', 'Vilolin',  current_date());
+
+/*
+Ovo je blok komenta u
+SQL-u
+*/
 
 INSERT INTO `zanr` (`sifraZanra`, `naziv`) VALUES
 (1, 'Drama'),
