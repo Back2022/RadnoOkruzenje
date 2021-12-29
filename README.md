@@ -97,12 +97,9 @@ sudo nano /etc/apache2/apache2.conf
 Include /etc/phpmyadmin/apache.conf
 ```
 
-
+Restart apachea:
 ```bash
-
-sudo nano /etc/apache2/apache2.conf
 sudo systemctl restart apache2
-
 ```
 
 
