@@ -6,7 +6,7 @@ FROM
 --
 
 SELECT 
-    SUM(quantityOrdered) SalesQuantity
+    SUM(quantityOrdered) AS SalesQuantity
 FROM
     orderdetails;
 
