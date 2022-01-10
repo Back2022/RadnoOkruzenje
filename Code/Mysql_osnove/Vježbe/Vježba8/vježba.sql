@@ -14,5 +14,11 @@ ALTER TABLE `posudba`
   ADD CONSTRAINT `fk_clan` FOREIGN KEY (`clanskiBroj`) REFERENCES `clanovi` (`clanskiBroj`) ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_film` FOREIGN KEY (`sifraFilma`) REFERENCES `filmovi` (`sifraFilma`) ON UPDATE CASCADE;
 
-ALTER TABLE `posudba`
-	ADD CONSTRAINT `FK_posudba_filmovi` FOREIGN KEY (`sifraFilma`) REFERENCES `filmovi` (`sifraFilma`) ON UPDATE CASCADE ON DELETE RESTRICT;
+/*
+        INDEX `sifraCjenika` (`sifraCjenika`) USING BTREE,
+	INDEX `clanskiBroj` (`clanskiBroj`) USING BTREE,
+	INDEX `sifraFilma` (`sifraFilma`) USING BTREE,
+	CONSTRAINT `posudba_ibfk_1` FOREIGN KEY (`sifraCjenika`) REFERENCES `videoteka`.`cjenik` (`sifraCjenika`) ON UPDATE CASCADE ON DELETE RESTRICT,
+	CONSTRAINT `posudba_ibfk_2` FOREIGN KEY (`clanskiBroj`) REFERENCES `videoteka`.`clanovi` (`clanskiBroj`) ON UPDATE CASCADE ON DELETE RESTRICT,
+	CONSTRAINT `posudba_ibfk_3` FOREIGN KEY (`sifraFilma`) REFERENCES `videoteka`.`filmovi` (`sifraFilma`) ON UPDATE CASCADE ON DELETE RESTRICT
+*/
