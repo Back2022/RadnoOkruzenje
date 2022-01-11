@@ -39,3 +39,16 @@ BEGIN
 END //
  
 DELIMITER ;
+
+-- ISTA STVAR POMOCU FUNKCIJE
+CREATE FUNCTION `GetTotalOrderFunc`()
+RETURNS int(10)
+BEGIN
+    DECLARE totalOrder INT DEFAULT 0;
+    
+    SELECT COUNT(*) 
+    INTO totalOrder
+    FROM orders;
+    
+    RETURN totalOrder;
+END
