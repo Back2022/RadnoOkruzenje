@@ -22,7 +22,7 @@ class Car
       return $this->model;
     }
 }
-   
+     
     
 //The child class can use the code it inherited from the parent class, 
 // and it can also have its own code 
