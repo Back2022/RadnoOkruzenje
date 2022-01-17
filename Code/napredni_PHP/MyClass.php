@@ -8,7 +8,7 @@
 class MyClass {
     public $public = 'Public';
     protected $protected = 'Protected';
-   // private $private = 'Private';
+ //   private $private = 'Private';
 protected $private = 'Private';
     function printHello()
     {

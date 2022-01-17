@@ -1,10 +1,6 @@
 <?php
 
 
-// PRIMJER ENKAPSULACIJE
-// https://www.google.com/search?q=php+encapsulation+definition&rlz=1C1GCEU_enHR981HR981&oq=php+encapsulation&aqs=chrome.2.69i57j0i512j0i22i30l8.5938j0j7&sourceid=chrome&ie=UTF-8
-// 
-// The parent class has its properties and methods
 class Car 
 {
   
@@ -12,20 +8,27 @@ class Car
     private  $model;
     
     // Public methods and properties can be used by both the parent and the child classes.
-    public function setModel($model)
+    public function setModel($model)  // setter
     {
       $this->model = ucfirst(strtolower(trim($model))); // MUTATOR !!!
     }
      
-    public function getModel()
+    public function getModel()  //getter
     {
-      return $this->model;
+        
+      return strrev($this->model);   // MUTATOR !!!
     }
 }
      
     
 //The child class can use the code it inherited from the parent class, 
 // and it can also have its own code 
+/** 
+ * PRIMJER ENKAPSULACIJE
+* 
+* The parent class has its properties and methods
+* @link https://www.google.com/search?q=php+encapsulation+definition&rlz=1C1GCEU_enHR981HR981&oq=php+encapsulation&aqs=chrome.2.69i57j0i512j0i22i30l8.5938j0j7&sourceid=chrome&ie=UTF-8 Primjer google enkapsulacije
+*/
 class SportsCar extends Car
 {
   
