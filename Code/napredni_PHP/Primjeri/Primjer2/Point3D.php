@@ -7,6 +7,7 @@
 
 
 class Point3D extends Point{
+    const CONST_VALUE = 'A constant value';
     protected int $z;
 
     public function __construct(int $x, int $y = 0, int $z, string $name='unnamed') {
@@ -18,6 +19,9 @@ class Point3D extends Point{
     }
     public function getZ(){
         return $this->z;
+    }
+    function __destruct() {
+        print "<br>Destroying " . __CLASS__ . "\n";
     }
 }
 

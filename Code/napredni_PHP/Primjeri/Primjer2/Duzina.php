@@ -10,8 +10,10 @@ class Duzina {
 
     private Point3D $p1;
     private Point3D $p2;
-
-    public function __construct() {
+    
+// mixed znaci da mozemo poslati bilo koji tip , 
+// u ovom slucaju Point ili Point3D
+    public function __construct(mixed $p1, mixed $p2) {
        // var_dump(func_get_args());
         if (get_class(func_get_arg(0))=="Point3D"){
           $this->p1 = func_get_arg(0);
@@ -30,13 +32,13 @@ class Duzina {
        // $this->p2 = $p2;
     }
     
-    public function __toString() {
+    public function __toString():string {
         return "Dužina je pravac omeđen točkama:<hr>$this->p1  $this->p2"
                 . " duljina je:" . $this->duljina() . "<br>"
                 . " koeficijent pravca je:" . $this->koefPravca();
     }
 
-    private function duljina() {
+    private function duljina():float {
         $deltaX = $this->p2->getX() - $this->p1->getX();
         $deltaY = $this->p2->getY() - $this->p1->getY();
         $deltaZ = $this->p2->getZ() - $this->p1->getZ();

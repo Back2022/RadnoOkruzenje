@@ -10,9 +10,10 @@ $p2 = new Point3D(x:4, y:0, z:3);
 // With named parameters (as of PHP 8.0):
 $p3 = new Point3D(x: 4, y:3, z:5, name:"t3d1");
 
+
 echo $p1;
 echo $p2;
 echo $p3;
 
-
-
+echo "konstanatna vrijednost varijable p3= ".$p3::CONST_VALUE;
+//echo "konstanatna vrijednost varijable p3= ".$p3->CONST_VALUE;  // konstante!=SVOJSTVO !!!!

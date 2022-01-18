@@ -25,7 +25,10 @@ class Point {
     }
     public function getY(){
         return $this->y;
-    }    
+    }  
+    function __destruct() {
+        print "<br>Destroying " . __CLASS__ . "\n";
+    }
 }
 
 ?>
