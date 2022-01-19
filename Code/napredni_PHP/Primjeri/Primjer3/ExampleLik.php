@@ -1,0 +1,31 @@
+<?php
+spl_autoload_register(function ($class_name) {
+    include $class_name . '.php';
+  });
+
+
+$t1=new Point3D(0, 0);
+$t2=new Point3D(0, 5);
+$t3=new Point3D(4, 0);
+
+$lik1=new Trokut($t1,$t2,$t3);
+echo "<hr>Površina trokuta je:<br>";
+echo $lik1->povrsina();
+
+
+$lik2=new Krug($t1,$t2);
+echo "<hr>Površina kruga je:<br>";
+echo $lik2->povrsina();
+
+echo $lik2;
+
+$lik3=new Krug($t2,$t3);
+echo $lik3;
+
+// kreiramo krug s jednom točkom i double radijusom
+$lik4=new Krug($t1,2.2);  
+echo $lik4;
+
+// kreiramo krug s jednom točkom i int radijusom
+$lik5=new Krug($t3,2);  
+echo $lik5;
