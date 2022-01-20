@@ -4,13 +4,12 @@ spl_autoload_register(function ($class_name) {
   });
 
 
-$t1=new Point3D(0, 0);
-$t2=new Point3D(0, 5);
-$t3=new Point3D(4, 0);
+$t1=new Point3D(0,0, 0);
+$t2=new Point3D(0,0, 5);
+$t3=new Point3D(0,4, 0);
 
 $lik1=new Trokut($t1,$t2,$t3);
-echo "<hr>Površina trokuta je:<br>";
-echo $lik1->povrsina();
+echo $lik1;
 
 
 $lik2=new Krug($t1,$t2);
@@ -29,3 +28,7 @@ echo $lik4;
 // kreiramo krug s jednom točkom i int radijusom
 $lik5=new Krug($t3,2);  
 echo $lik5;
+
+
+$lik6= new Romboid($t1,$t2,$t3);
+echo $lik6;
