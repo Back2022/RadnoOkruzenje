@@ -6,7 +6,7 @@
  *
  * @author Korisnik
  */
-class Duzina {
+class Duzina implements DuzinaInterface {
 
     private Point3D $p1;
     private Point3D $p2;
@@ -65,7 +65,7 @@ class Duzina {
      * Koeficijent smjera pravca je mjera kojom se opisuje nagib pravca u Kartezijevom ili pravokutnom koordinatnom sustavu.
      * @link https://hr.wikipedia.org/wiki/Koeficijent_smjera_pravca Koeficijent smjera pravca
      */
-    private function koefPravca() {
+    public function koefPravca() {
         $deltaX = $this->p2->getX() - $this->p1->getX();
         $deltaY = $this->p2->getY() - $this->p1->getY();
         

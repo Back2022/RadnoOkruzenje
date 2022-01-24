@@ -5,7 +5,7 @@
  *
  * @author Korisnik
  */
-class Krug extends Lik {
+class Krug extends AbstractLik implements KrugInterface{
     //put your code here
     private float $S;
     private float $r;
@@ -59,6 +59,12 @@ class Krug extends Lik {
                 , $this->S
                 , $this->opseg               
                 );
+    }
+
+    
+    // dvaputa veći radijus= 4x veća površina !!!
+    public function scale(float $factor) {
+        $this->__construct($this->O, $this->tr->scale($factor));
     }
 
 }

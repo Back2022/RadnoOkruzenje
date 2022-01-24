@@ -6,7 +6,7 @@
  */
 
 
-class Point3D extends Point{
+class Point3D extends Point implements Point3DInterface{
     const CONST_VALUE = 'A constant value';
     protected int $z;
 
@@ -23,6 +23,14 @@ class Point3D extends Point{
     function __destruct() {
         print "<br>Destroying " . __CLASS__ . "\n";
     }
+
+    public function scale(float $factor): Point3D {
+        $this->x *= $factor;
+        $this->y *= $factor;
+        $this->z *= $factor;
+        return $this;
+    }
+
 }
 
 ?>

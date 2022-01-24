@@ -5,11 +5,11 @@
  *
  * @author Korisnik
  */
-class Trokut extends Lik {
+class Trokut extends AbstractLik {
     //put your code here
-    protected Point3d $a;
-    protected Point3d $b;    
-    protected Point3d $c;
+   // protected Point3d $a;
+   // protected Point3d $b;    
+   // protected Point3d $c;
     
     protected Duzina $AB;
     protected Duzina $BC;   
