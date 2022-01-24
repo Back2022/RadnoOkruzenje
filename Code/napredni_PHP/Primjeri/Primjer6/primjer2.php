@@ -9,7 +9,7 @@ function checkNum($number) {
 
 //trigger exception in a "try" block
 try {
-  checkNum(2);
+  checkNum(1);
   //If the exception is thrown, this text will not be shown
   echo 'If you see this, the number is 1 or below';
 }

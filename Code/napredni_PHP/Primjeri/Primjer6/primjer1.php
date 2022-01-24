@@ -7,5 +7,15 @@ function checkNum($number) {
   return true;
 }
 
-//trigger exception
+
+
+
+try {
+   //trigger exception
 checkNum(2);
+
+
+} catch (Exception $exc) {
+    //echo $exc->getTraceAsString();
+    echo $exc->getMessage();
+}
