@@ -1,0 +1,1 @@
+"C:\Users\Korisnik\Desktop\Radno okruženje\za-github\Code\vendor\bin\phpunit.bat" --configuration "C:\Users\Korisnik\Desktop\Radno okruženje\za-github\Code\vendor\domnikl\design-patterns-php\phpunit.xml"

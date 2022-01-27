@@ -11,6 +11,8 @@ class customException extends Exception {
  
  */
 
+
+
 class mojException extends Exception{
     final public function errorMessage(): string {
         return "Mail adresa ".$this->getMessage(). " ne postoji!";
@@ -38,3 +40,5 @@ catch (mojException $e) {
   echo $e->getMessage();
   echo $e->errorMessage();
 }
+
+

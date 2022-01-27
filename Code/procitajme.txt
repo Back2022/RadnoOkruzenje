@@ -1,4 +1,18 @@
+// za pokretanje testova design patterns koristi naredbu:
+Korisnik@CR13-02 MINGW64 ~/Desktop/Radno okruženje/za-github/Code (main)
+$ ./vendor/bin/phpunit --configuration ./vendor/domnikl/design-patterns-php/phpunit.xml
+PHPUnit 8.5.23 by Sebastian Bergmann and contributors.
+
+................................................................. 65 / 66 ( 98%)
+.                                                                 66 / 66 (100%)
+
+// Promjeni nastavk phpunit.xml.dist u phpunit.xml
+// U phpunit.xml promjeni bootstrap -> bootstrap="C:\Users\Korisnik\Desktop\Radno okruženje\za-github\Code\vendor\autoload.php"
+
+
 /etc/apache2/sites-available
 
 
 instaliran composer 06.12.2021
+
+
