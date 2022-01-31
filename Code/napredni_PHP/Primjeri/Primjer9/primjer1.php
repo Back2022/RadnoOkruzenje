@@ -15,7 +15,7 @@
  */
 include '../../dbconn.php';
 
-$result = $mysqli->query("SELECT * FROM `classicmodels`.`offices` LIMIT 1000");
+$result = $mysqli->query("SELECT * FROM `classicmodels`.`employees` LIMIT 1000");
 
 echo "<ul>";
 echo "<li>ukupno redova u query: <b>" . $mysqli->affected_rows . "</b></li>";
@@ -52,12 +52,12 @@ if ($row = $result->fetch_assoc()) {
     . " " . $row['postalCode']
     . "<br>";
 }
-if ($row = $result->fetch_assoc()) {
-    echo $row['officeCode']
-    . " " . $row['city']
-    . " " . $row['phone']
-    . " " . $row['addressLine1']
-    . " " . $row['postalCode']
+if ($row = $result->fetch_array(MYSQLI_NUM)) { //MYSQLI_NUM=2 znaci dohvati podatke kao numerirani array
+    echo $row[3]
+    . " " . $row[7]
+    . " " . $row[2]
+    . " " . $row[0]
+    . " " . $row[1]
     . "<br>";
 }
 if ($row = $result->fetch_assoc()) {

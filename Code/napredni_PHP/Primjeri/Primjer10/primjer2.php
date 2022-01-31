@@ -1,13 +1,13 @@
 <?php
-    $mysqli = new mysqli("localhost", "my_user", "my_password", "world");
-
+   // $mysqli = new mysqli("localhost", "my_user", "my_password", "world");
+$mysqli = new mysqli("localhost", "root", "", "classicmodels");
     /* check connection */
     if (mysqli_connect_errno()) {
         printf("Connect failed: %s\n", mysqli_connect_error());
         exit();
     }
 
-    $mysqli->query("CREATE TABLE Language LIKE CountryLanguage");
+    $mysqli->query("CREATE TABLE IF NOT EXISTS Language LIKE CountryLanguage");
 
     /* set autocommit to off */
     $mysqli->autocommit(FALSE);
