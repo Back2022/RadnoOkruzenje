@@ -3,11 +3,14 @@
     "description": "moj prvi php composer projekt",
     "autoload": {
         "psr-4": {
-            "Korisnik\\Code\\": "src/"
+            "Korisnik\\Code\\": "src/",
+            "Core\\": "MVC/libs/core/",
+            "App\\": "MVC/libs/app/"           
         }
     },
     "authors": [
         {
+            
             "name": "mrvic",
             "email": "mrvic.predrag@gmail.com"
         }

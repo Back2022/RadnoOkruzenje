@@ -1,7 +1,7 @@
 <div class="container-fluid pb-5 portfolio-text">
   <div class="row">
     <div class="col-md-7 offset-md-1 col-sm-12">
-      <h2>Welcome to my Mini MVC!</h2>
+      <h2>ovo je neka moja nova stranica</h2>
     </div>
   </div>
   

@@ -1,16 +1,21 @@
 <?php
 
-define('DB_TYPE', 'mysql');
+defined('DB_TYPE') or define('DB_TYPE', 'mysql');
 
 switch (ENVIRONMENT) {
 
 	case 'development':
-		define('DB_HOST',	'localhost');
-		define('DB_NAME',	'database');
-		define('DB_USER',	'root');
-		define('DB_PASS',	'root');
+		defined('DB_HOST') or define('DB_HOST',	'localhost');
+		defined('DB_NAME') or define('DB_NAME',	'mvcdb');
+		defined('DB_USER') or define('DB_USER',	'root');
+		defined('DB_PASS') or define('DB_PASS',	'');
     break;
-
+	case 'production':
+		define('DB_HOST',	'localhost');
+		define('DB_NAME',	'mvcdb');
+		define('DB_USER',	'admin');
+		define('DB_PASS',	'');
+    break;
 	default:
 	// It's not great practice to have your DB credentials in your code 
 	// Perhaps store them as constants? 

@@ -17,7 +17,7 @@ class Route {
 		$url 			= rtrim($url, '/');
 		$url 			= filter_var($url, FILTER_SANITIZE_URL);
 		self::$URL 		= explode('/', $url);
-		self::$REQUEST 	= $_SERVER['REQUEST_METHOD'];
+		self::$REQUEST 	= isset($_SERVER['REQUEST_METHOD'])? $_SERVER['REQUEST_METHOD'] : 'GET';
 
 		if (empty(self::$URL[0])) {
 			self::load(self::$default);

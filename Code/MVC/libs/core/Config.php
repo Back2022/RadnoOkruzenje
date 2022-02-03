@@ -17,6 +17,18 @@ class Config {
 	public static $dbconn = '/db/connection';
 
 	public static function db() {
+/**
+ * var_dump(CONF);
+ * C:\Users\Korisnik\Desktop\Radno okruženje\za-github\Code\MVC/conf
+ * 
+ * self::$dbconn
+ * '/db/connection'
+ * 
+ * Route::$fileExtention
+ * .php
+ */           
+
+//C:\Users\Korisnik\Desktop\Radno okruženje\za-github\Code\MVC/conf/db/connection.php
 		require CONF.self::$dbconn.Route::$fileExtention;
 	}
 	
