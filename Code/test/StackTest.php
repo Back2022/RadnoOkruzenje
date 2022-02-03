@@ -12,6 +12,7 @@ final class StackTest extends TestCase
     }
 
     /**
+     * 
      * @depends testEmpty
      */
     public function testPush(array $stack): array
@@ -30,5 +31,13 @@ final class StackTest extends TestCase
     {
         $this->assertSame('foo', array_pop($stack));
         $this->assertEmpty($stack);
+    }
+     /**
+     * @after
+     * @covers StackTest::testAfter()
+     */
+    public function testAfter(): void
+    {
+        $this->assertSame('a', "a");
     }
 }

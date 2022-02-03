@@ -67,3 +67,18 @@ catch ( PDOException $e ) {
     $db->rollback();
     throw $e;
 }
+
+/**
+ * 
+ * CREATE TABLE `orders_products` (
+	`order_id` INT(11) NOT NULL AUTO_INCREMENT,
+	`product_id` INT(11) NULL DEFAULT NULL,
+	`quantity` INT(11) NULL DEFAULT NULL,
+	PRIMARY KEY (`order_id`) USING BTREE
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=31
+;
+
+ */

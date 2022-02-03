@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./vendor/autoload.php" defaultTestSuite="converter">
+    <testsuites>
+        <testsuite name="converter">
+            <directory suffix="Test.php">test</directory>
+        </testsuite>
+        <testsuite name="Design Patterns1">
+            <directory suffix="Test.php">DesignPatternsPHP/Behavioral/*/Tests</directory>
+            <directory suffix="Test.php">DesignPatternsPHP/Creational/*/Tests</directory>
+        </testsuite>          
+        <testsuite name="Design Patterns2">            
+            <directory suffix="Test.php">DesignPatternsPHP/More/*/Tests</directory>
+            <directory suffix="Test.php">DesignPatternsPHP/Structural/*/Tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
+

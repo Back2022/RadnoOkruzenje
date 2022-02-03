@@ -1,3 +1,11 @@
+# Za pokretanje phpunit testsuite grupa testova
+Korisnik@CR13-02 MINGW64 ~/Desktop/Radno okruženje/za-github/Code (main)
+$ ./vendor/bin/phpunit  --testsuite "Design Patterns2"
+
+# editiraj konfiguracijski xml phpunit.xml
+
+
+
 // za pokretanje testova design patterns koristi naredbu:
 Korisnik@CR13-02 MINGW64 ~/Desktop/Radno okruženje/za-github/Code (main)
 $ ./vendor/bin/phpunit --configuration ./vendor/domnikl/design-patterns-php/phpunit.xml
