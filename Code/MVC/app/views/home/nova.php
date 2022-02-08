@@ -8,3 +8,9 @@
 </div>
 
 <p>I have a lot of work to do here but don't let that stop you! Code!</p>
+
+<!-- Ne radi placeholder za varijable iz kontrollera -->
+<?=$this->color;?>
+<?=$color;?>
+
+<div><?=$shape;?></div>

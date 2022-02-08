@@ -16,14 +16,15 @@ final class BootstrapTest extends TestCase {
         Bootstrap::init();
     }
 
+
     public function testDbconnClassExists(): void {
 
-        $this->assertFileExists(ROOT . '/conf/db/connection.php');
+        $this->assertFileExists(ROOT . '/conf/db/connection.php','Ne postoji db connection file!');
         Config::db();
         $mysqli = new \mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);  //objektno
        
         $this->assertEquals(0, mysqli_connect_errno()
-                ,''.mysqli_connect_error());
+                ,'PROVJERI conf\db\connection.php '.mysqli_connect_error());
         $this->assertEquals('5.5.5-10.4.22-MariaDB',$mysqli->server_info);
 
 
