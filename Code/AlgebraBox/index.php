@@ -3,6 +3,7 @@
 	
 	class Index extends Page
 	{
+           
 		protected function GetContent()
 		{
 			$output = '';
@@ -12,7 +13,7 @@
 			
 			return $output;
 		}
-		
+	
 		protected function PageRequiresAuthenticUser()
 		{
 			return false;
